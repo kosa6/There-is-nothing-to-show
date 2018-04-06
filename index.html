@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Earth in ThreeJs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="index.js" type="text/javascript"></script>
+    <script src="js/three.js" type="text/javascript"></script>
+    <script src="js/OrbitControls.js" type="text/javascript"></script>
+    <script src="js/Detector.js" type="text/javascript"></script>
+    <script src="js/DDSLoader.js" type="text/javascript"></script>
+    <script src="js/TGALoader.js" type="text/javascript"></script>
+    <script src="js/CanvasRenderer.js" type="text/javascript"></script>
+    <script src="js/Projector.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="canvas-container ">
+        <div class="container  float-right ">
+            <div class="row ">
+                <div class="col-lg-12 col-md-6 col-sm-4 ">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" onclick="stopRotation()">Stop rotation</button>
+                        <button type="button" class="btn btn-secondary" onclick="changeCamera()">Change camera</button>
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                Planets
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a type="button" class="btn btn-secondary dropdown-item">Earth</a>
+                                </li>
+                                <li>
+                                    <a type="button" class="btn btn-secondary dropdown-item">Mars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-2">
+                    <div class="description">
+                        <h2>Merkury</h2>
+                        <p id='srednia'>Średnica równikowa : 4 879</p>
+                        <p id='Masa'>Masa : 330,2</p>
+                        <p id='odleglosc'>Odległość od Słońca : 57 909 170</p>
+                        <p id='czas'>Czas obiegu : 87,969</p>
+                        <p id='okers'>Okres obrotu : 58d 15h 26m </p>
+                        <p id='moons'>Księżyce : 0 </p>
+                        <p id='rodzaj'>Rodzaj : skalista</p>
+                        <p id='opis'>Opis: Merkury – najmniejsza i najbliższa Słońcu planeta Układu Słonecznego. Jako planeta wewnętrzna
+                            znajduje się dla ziemskiego obserwatora zawsze bardzo blisko Słońca, dlatego jest trudna do obserwacji.
+                            Mimo to należy do planet widocznych gołym okiem i była znana już w starożytności. Merkurego dojrzeć
+                            można jedynie tuż przed wschodem lub tuż po zachodzie Słońca. Ukształtowanie powierzchni Merkurego
+                            przypomina Księżyc: są na nim liczne kratery uderzeniowe i praktycznie pozbawiony jest atmosfery.
+                            Temperatura powierzchni waha się od −183 °C do 427 °C. W przeciwieństwie do Księżyca, planeta
+                            ma jednak duże żelazne jądro, generujące pole magnetyczne o natężeniu stukrotnie mniejszym od
+                            natężenia ziemskiego pola magnetycznego[4]. Wielkość jądra powoduje, że Merkury ma jedną z największych
+                            gęstości spośród planet Układu Słonecznego[5] (nieznacznie większą ma Ziemia). Merkury nie ma
+                            naturalnych satelitów.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/TGALoader.js"></script>
+    <script src="js/CanvasRenderer.js"></script>
+    <script src="js/Projector.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
